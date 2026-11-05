@@ -1,0 +1,113 @@
+/* Estilo de hoja de libreta para el fondo */
+body {
+  background-color: #fdfbf7;
+  background-image: 
+    linear-gradient(#e2e8f0 1px, transparent 1px);
+  background-size: 100% 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.notebook-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* Título principal superior */
+.notebook-header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  border-bottom: 3px double #2c3e50;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+
+/* Tarjeta de cada receta en dos columnas */
+.recipe-sheet {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 30px;
+  margin-bottom: 45px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Estilo responsivo para celulares (se acomoda en una sola columna si la pantalla es chica) */
+@media (max-width: 768px) {
+  .recipe-sheet {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Columna de la imagen */
+.recipe-image-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-frame {
+  border: 3px solid #333333;
+  padding: 8px;
+  background: #fff;
+  box-shadow: 4px 4px 0px #333333;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.recipe-title {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-top: 10px;
+}
+
+/* Columna del texto */
+.recipe-content-side {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.recipe-content-side h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  border-bottom: 1px dashed #cbd5e1;
+  padding-bottom: 3px;
+  color: #1e293b;
+}
+
+.recipe-content-side ul, 
+.recipe-content-side ol {
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.recipe-content-side li {
+  margin-bottom: 4px;
+}
+
+.recipe-meta {
+  background: #f8fafc;
+  padding: 8px 12px;
+  border-left: 4px solid #3b82f6;
+  margin-bottom: 10px;
+}
